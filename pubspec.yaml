@@ -30,10 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_regex: ^0.0.3
+  percent_indicator: ^4.2.3
+  image_picker: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -58,8 +62,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -73,17 +78,32 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Michroma
+      fonts:
+        - asset: assets/fonts/Michroma-Regular.ttf
+        # - asset: fonts/Schyler-Italic.ttf
+        #   style: italic
+    - family: dcards
+      fonts:
+        - asset: assets/fonts/dcards.ttf
+        # - asset: fonts/TrajanPro_Bold.ttf
+        #   weight: 700
+    - family: Cursive
+      fonts:
+        - asset: assets/fonts/Cursive.ttf
+    - family: cursive1
+      fonts: 
+        - asset: assets/fonts/cursive1.otf
+    - family: fontnor
+      fonts:
+        - asset: assets/fonts/fontnor.ttf
+    - family: norl
+      fonts:
+        - asset: assets/fonts/norl.ttf
+    - family: reto
+      fonts:
+        - asset: assets/fonts/reto.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
